@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>aichai</title>
+    <link rel="icon" href="/aichai/assets/img/fav.png" type="image/svg+xml">
+    <link rel="stylesheet" href="./styles/style.scss"/>
+    <script type="module" crossorigin src="/aichai/assets/js/index.js"></script>
+    <link rel="modulepreload" crossorigin href="/aichai/assets/js/vendor.js">
+    <link rel="stylesheet" href="/aichai/assets/css/style.css">
+  </head>  <body>
+    <div class="wrapper">
+      <header class="header" id="header">
+        <div class="header__container">
+          <nav class="header__menu menu">
+            <div class="menu__icon">
+              <span></span>
+            </div>
+            <div class="menu__body">
+              <ul class="menu__list">
+                <li class="menu__item">
+                  <a data-goto=".brand" class="menu__link" href="">О бренде</a>
+                </li>
+                <li class="menu__item">
+                  <div class="menu__item-box">
+                    <a data-goto=".catalog" class="menu__link" href="">
+                      Каталог
+                    </a>
+                    <div class="menu__item-nav">
+                      <svg width="16" height="12" viewBox="0 0 16 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1 6C6.46732 6 9.53268 6 15 6M15 6C15 6 9.4 5 9.4 1M15 6C15 6 10.1538 6.57692 9.4 11" stroke="#2F4B1E" stroke-width="0.807692" stroke-linecap="square"/>
+                      </svg>
+                    </div>
+                  </div>
+                  <ul class="menu__sublist">
+                    <li class="menu__subitem">
+                      <a href="/#aichai" class="menu__sublink" >Нейрочай</a>
+                    </li>
+                    <li class="menu__subitem">
+                      <a href="/#fitosbor" class="menu__sublink" >Фитосборы</a>
+                    </li>
+                  </ul>
+                </li>
+                <li class="menu__item">
+                  <a class="menu__link" href="/aichai/src/pages/antistresshaki.html">Антистрессхаки</a>
+                </li>
+              </ul>
+              <div class="menu-markets">
+                <img src="/aichai/assets/img/wb.png" alt="">
+                <img src="/aichai/assets/img/ozon.png" alt="">
+              </div>
+            </div>
+          </nav>
+          <a class="header__logo" href="/">
+            <img src="/aichai/assets/img/logo.png" alt="">
+          </a>
+          <ul class="header__markets markets-header">
+            <li class="markets-header__item">
+              <a class="markets-header__link menu__link"  href="">Wildberries</a>
+              </li>
+            <li class="markets-header__item">
+              <a class="markets-header__link menu__link" href="">Ozon</a>
+            </li>
+          </ul>
+        </div>
+      </header>      <main class="main">
+        <section class="hero" id="hero" data-section="hero">
+          <div class="about-parallax"><img class="hero-decor hero-decor-1" src="/aichai/assets/img/decor-1.png" alt=""></div>
+          <div class="about-parallax"><img class="hero-decor hero-decor-2" src="/aichai/assets/img/decor-2.png" alt=""></div>
+          <div class="hero__container">
+            <h1 class="hero__title">нейрочай</h1>
+            <p class="hero__descr">Продукты основаны на&nbsp;современных научных исследованиях и&nbsp;принципах доказательной медицины, что приводит к&nbsp;оптимальным результатам.</p>
+            <ul class="hero__list hero-advantages">
+              <li class="hero__item hero-advantages__item">
+                <div class="hero-advantages__img">
+                  <img src="/aichai/assets/img/advantages-1.png" alt="">
+                </div>
+                <p class="hero-advantages__descr">
+                  Уникальными составы, подобранные нейросетями для оптимального эффекта на&nbsp;ваше здоровье
+                </p>
+              </li>
+              <li class="hero__item hero-advantages__item">
+                <div class="hero-advantages__img">
+                  <img src="/aichai/assets/img/advantages-2.png" alt="">
+                </div>
+                <p class="hero-advantages__descr">
+                  Уникальными составы, подобранные нейросетями для оптимального эффекта на&nbsp;ваше здоровье
+                </p>
+              </li>
+              <li class="hero__item hero-advantages__item">
+                <div class="hero-advantages__img">
+                  <img src="/aichai/assets/img/advantages-3.png" alt="">
+                </div>
+                <p class="hero-advantages__descr">
+                  Уникальными составы, подобранные нейросетями для оптимального эффекта на&nbsp;ваше здоровье
+                </p>
+              </li>
+            </ul>
+          </div>
+        </section>
+        
+        <section class="section quote">
+          <div class="quote__container">
+            <p class="quote__text">
+              &laquo;Наша цель&nbsp;&mdash; предоставить доступ к&nbsp;натуральным, безопасным и&nbsp;эффективным решениям, которые помогут улучшить здоровье и&nbsp;повысить качество жизни.&raquo;
+            </p>
+            <div class="quote__info info-quote">
+              <div class="info-quote__back image-parallax">
+                <svg width="400" height="366" viewBox="0 0 400 366" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.2" d="M104.348 366C84.3214 366 67.4572 361.793 53.7549 353.379C40.0527 344.966 28.9855 334.448 20.5534 321.828C13.1752 308.155 7.90514 293.431 4.74308 277.655C1.58102 260.828 0 244 0 227.172C0 179.845 10.5402 138.302 31.6205 102.543C52.7009 65.7327 80.1054 31.5517 113.834 0L126.482 11.0431C74.8353 62.5776 49.0118 124.629 49.0118 197.198C49.0118 212.974 50.5929 226.646 53.7549 238.215C56.917 248.733 60.6061 256.621 64.8221 261.879C66.9302 256.621 72.2002 251.362 80.6324 246.103C89.0645 239.793 100.132 236.638 113.834 236.638C132.806 236.638 148.09 242.948 159.684 255.569C172.332 267.138 178.656 282.388 178.656 301.319C178.656 323.405 171.805 339.707 158.103 350.224C144.4 360.741 126.482 366 104.348 366ZM325.692 366C305.665 366 288.801 361.793 275.099 353.379C261.397 344.966 250.329 334.448 241.897 321.828C234.519 308.155 229.249 293.431 226.087 277.655C222.925 260.828 221.344 244 221.344 227.172C221.344 179.845 231.884 138.302 252.964 102.543C274.045 65.7327 300.922 31.5517 333.597 0L346.245 11.0431C294.598 64.681 268.775 126.733 268.775 197.198C268.775 212.974 270.356 226.646 273.518 238.215C276.68 248.733 280.369 256.621 284.585 261.879C287.747 256.621 293.017 251.362 300.395 246.103C308.827 239.793 319.895 236.638 333.597 236.638C353.623 236.638 369.433 242.948 381.028 255.569C393.676 267.138 400 282.388 400 301.319C400 323.405 393.149 339.707 379.447 350.224C365.744 360.741 347.826 366 325.692 366Z" fill="#B85DBA"/>
+                </svg>
+              </div>
+              <div class="info-quote__img">
+                <img src="/aichai/assets/img/head.png" alt="">
+              </div>
+              <div class="info-quote__heading">
+                <span class="info-quote__author">Марина Васильева</span>
+                <span class="">Создательница</span>
+              </div>
+            </div>
+          </div>
+        </section>        <section class="brand section" id="brand">
+          <div class="brand__container">
+            <h2 class="brand__title section-title">О бренде</h2>
+            <div class="brand__box col-12 row">
+              <div class="brand__info col-5">
+                <div class="brand__text">
+                  <p>Продукты основаны на&nbsp;современных научных исследованиях и&nbsp;принципах доказательной медицины, что приводит к&nbsp;оптимальным результатам.</p>
+                  <p>НЕЙРОЧАЙ Astrology&nbsp;&mdash; первая и&nbsp;единственная коллекция травяного чая, где состав разработан нейросетью и&nbsp;учитывает особенности каждого знака зодиака. Наслаждайтесь уникальными вкусами, получите поддержку сил природы и&nbsp;благоволение звёзд.</p>
+                </div>
+              </div>
+              <div class="col-1"></div>
+              <div class="col-6 brand__value">
+                <img class="brand-decor decor-brand-1" src="/aichai/assets/img/1.png" alt="">
+                <div class="brand__img"> 
+                  <img src="/aichai/assets/img/aitea.jpg" alt="">
+                </div>
+                <img class="brand-decor decor-brand-2" src="/aichai/assets/img/2.png" alt="">
+              </div>
+            </div>
+          </div>
+        </section>        <section class="catalog section light" id="catalog">
+          <img class="catalog-decor decor-catalog-1" src="/aichai/assets/img/sakura1.png" alt="">
+          <img class="catalog-decor decor-catalog-2" src="/aichai/assets/img/sakura2.png" alt="">
+          <img class="catalog-decor decor-catalog-3" src="/aichai/assets/img/decor-3.png" alt="">
+          <div class="catalog__container">
+            <div class="catalog-section" id="aichai">
+              <h2 class="catalog__title section-title">Каталог</h2>
+              <div class="catalog__box">
+                <h3 class="catalog__subtitle">Нейрочай</h3>
+                <p class="catalog__subtext">Погрузитесь в&nbsp;мир инноваций и&nbsp;гармонии с&nbsp;собой благодаря нашему уникальному продукту!</p>
+                <div class="catalog__slider-nav">
+                  <div class="catalog__slider-next tea-nav swiper-button-next">
+                    <svg width="64" height="37" viewBox="0 0 64 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M42.4167 0.0937491C42.4167 2.02604 44.3255 4.91146 46.2578 7.33333C48.7422 10.4583 51.7109 13.1849 55.1146 15.2656C57.6667 16.8255 60.7604 18.3229 63.25 18.3229M63.25 18.3229C60.7604 18.3229 57.6641 19.8203 55.1146 21.3802C51.7109 23.4635 48.7422 26.1901 46.2578 29.3099C44.3255 31.7344 42.4167 34.625 42.4167 36.5521M63.25 18.3229L0.749997 18.3229" stroke="#FCF5FC" stroke-width="3"/>
+                    </svg>
+                  </div>
+                  <div class="catalog__slider-prev tea-nav swiper-button-prev">
+                    <svg width="64" height="37" viewBox="0 0 64 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M21.5833 0.0937491C21.5833 2.02604 19.6745 4.91146 17.7422 7.33333C15.2578 10.4583 12.2891 13.1849 8.88542 15.2656C6.33333 16.8255 3.23958 18.3229 0.750001 18.3229M0.750001 18.3229C3.23958 18.3229 6.33594 19.8203 8.88542 21.3802C12.2891 23.4635 15.2578 26.1901 17.7422 29.3099C19.6745 31.7344 21.5833 34.625 21.5833 36.5521M0.750001 18.3229L63.25 18.3229" stroke="#FCF5FC" stroke-width="3"/>
+                    </svg>
+                  </div>
+                </div>
+              </div>
+              <div class="catalog__slider tea-slider swiper slider-catalog">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide catalog__slide" 
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Весы»",
+                    "description":"Аромат добра, мира и пикантных сплетен.",
+                    "ingredients": ["ромашка", "ромашка", "ромашка", "ромашка", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Весы&raquo;</h4>
+                      <p class="slider-catalog__text">Аромат добра, мира и&nbsp;пикантных сплетен.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide"
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Cтрелец»",
+                    "description":"Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.",
+                    "ingredients": ["ромашка", "ромашка", "мята", "ромашка", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Cтрелец&raquo;</h4>
+                      <p class="slider-catalog__text">Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide" 
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Весы»",
+                    "description":"Аромат добра, мира и пикантных сплетен.",
+                    "ingredients": ["мята", "мята", "мята", "мята", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Водолей&raquo;</h4>
+                      <p class="slider-catalog__text">Вкус удавшейся жизни.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide" 
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Весы»",
+                    "description":"Аромат добра, мира и пикантных сплетен.",
+                    "ingredients": ["ромашка", "ромашка", "ромашка", "ромашка", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Весы&raquo;</h4>
+                      <p class="slider-catalog__text">Аромат добра, мира и&nbsp;пикантных сплетен.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide"
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Cтрелец»",
+                    "description":"Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.",
+                    "ingredients": ["ромашка", "ромашка", "мята", "ромашка", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Cтрелец&raquo;</h4>
+                      <p class="slider-catalog__text">Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide" 
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Весы»",
+                    "description":"Аромат добра, мира и пикантных сплетен.",
+                    "ingredients": ["мята", "мята", "мята", "мята", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Водолей&raquo;</h4>
+                      <p class="slider-catalog__text">Вкус удавшейся жизни.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide" 
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Весы»",
+                    "description":"Аромат добра, мира и пикантных сплетен.",
+                    "ingredients": ["ромашка", "ромашка", "ромашка", "ромашка", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Весы&raquo;</h4>
+                      <p class="slider-catalog__text">Аромат добра, мира и&nbsp;пикантных сплетен.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide"
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Cтрелец»",
+                    "description":"Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.",
+                    "ingredients": ["ромашка", "ромашка", "мята", "ромашка", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Cтрелец&raquo;</h4>
+                      <p class="slider-catalog__text">Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide catalog__slide" 
+                    data-chai='{
+                    "title": "Нейрочай Astrology «Весы»",
+                    "description":"Аромат добра, мира и пикантных сплетен.",
+                    "ingredients": ["мята", "мята", "мята", "мята", "ромашка"],
+                    "images": [
+                      "/public/img/catalog/vesi.jpg",
+                      "/public/img/catalog/strelec.jpeg",
+                      "/public/img/catalog/kozerog.jpeg"
+                      ]
+                    }'
+                  >
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Нейрочай Astrology &laquo;Водолей&raquo;</h4>
+                      <p class="slider-catalog__text">Вкус удавшейся жизни.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="catalog__description">
+                Откройте для себя магию чая с&nbsp;составом, созданным нейросетью. Этот невероятный напиток представляет собой совершенное сочетание традиционных чайных листьев с&nbsp;уникальными ингредиентами.
+              </p>
+            </div>
+            <div class="catalog-section" id="fitosbor">
+              <div class="catalog__box">
+                <h3 class="catalog__subtitle">Фитосборы</h3>
+                <p class="catalog__subtext">Приглашаем вас открыть для себя мир здоровья и&nbsp;гармонии с&nbsp;нашими уникальными фитосборами!</p>
+                  <div class="catalog__slider-nav">
+                    <div class="catalog__slider-next fito-nav swiper-button-next">
+                      <svg width="64" height="37" viewBox="0 0 64 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M42.4167 0.0937491C42.4167 2.02604 44.3255 4.91146 46.2578 7.33333C48.7422 10.4583 51.7109 13.1849 55.1146 15.2656C57.6667 16.8255 60.7604 18.3229 63.25 18.3229M63.25 18.3229C60.7604 18.3229 57.6641 19.8203 55.1146 21.3802C51.7109 23.4635 48.7422 26.1901 46.2578 29.3099C44.3255 31.7344 42.4167 34.625 42.4167 36.5521M63.25 18.3229L0.749997 18.3229" stroke="#FCF5FC" stroke-width="3"/>
+                      </svg>
+                    </div>
+                    <div class="catalog__slider-prev fito-nav swiper-button-prev">
+                      <svg width="64" height="37" viewBox="0 0 64 37" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5833 0.0937491C21.5833 2.02604 19.6745 4.91146 17.7422 7.33333C15.2578 10.4583 12.2891 13.1849 8.88542 15.2656C6.33333 16.8255 3.23958 18.3229 0.750001 18.3229M0.750001 18.3229C3.23958 18.3229 6.33594 19.8203 8.88542 21.3802C12.2891 23.4635 15.2578 26.1901 17.7422 29.3099C19.6745 31.7344 21.5833 34.625 21.5833 36.5521M0.750001 18.3229L63.25 18.3229" stroke="#FCF5FC" stroke-width="3"/>
+                      </svg>
+                    </div>
+                </div>
+              </div>
+              <div class="catalog__slider fito-slider swiper slider-catalog">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide catalog__slide">
+                    <div class="slider-catalog__img">
+                      <img src="/aichai/assets/img/vesi.jpg" alt="">
+                    </div>
+                    <div class="slider-catalog__box">
+                      <h4 class="slider-catalog__heading">Фитосбор &laquo;Лаванда&raquo;</h4>
+                      <p class="slider-catalog__text">Случайня смесь, аромат которой держится чуть дольше, чем твое новое увлечение.</p>
+                      <div class="slider-catalog__markets">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <p class="catalog__description">
+                Каждый наш фитосбор&nbsp;&mdash; это настоящий подарок природы, полный полезных свойств и&nbsp;витаминов, способных укрепить ваше здоровье и&nbsp;улучшить самочувствие.
+              </p>
+            </div>
+        
+          </div>
+        </section>
+        <section class="contact section light">
+          <div class="contact__container">
+            <h2 class="contact__title section-title">остались вопросы? Напишите нам!</h2>
+            <div class="contact__box row col-12">
+              <form action="/local/ajax/join.php" method="post" class="col-6 contact__form form-contact js-form">
+                <div class="contact__wrapper">
+        
+                  <div class="contact__input wrapper__name ">
+                    <input name="user_name" class="contact__name" type="text" id="contact-name" data-type="text" placeholder=" ">
+                    <label class="contact__label" for="">Имя</label>
+                    <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                      <span>Перепроверьте корректность имени</span>
+                    </div>
+                  </div>
+        
+                  <div class="contact__input wrapper__phone ">
+                    <input data-mask="phone" name="user_phone" class="contact__tel" data-type="phone" type="text" id="contact-phone" inputmode="text" placeholder=" ">
+                    <label class="contact__label" for="">Телефон</label>
+                    <div class="validate__form-error validate__form-error--phone js-error js-error-phone ">
+                      <span>Заполните телефон, мы позвоним на него</span>
+                    </div>
+                  </div>
+        
+                  <div class="contact__input wrapper__text">
+                    <textarea name="user_text" class="contact__text" type="text" data-type="novalidate" placeholder=""></textarea>
+                    <label class="contact__label" for="">Комментарий</label>
+                    <div class="validate__form-error validate__form-error--name js-error js-error-name">
+                      <span>Перепроверьте корректность письма</span>
+                    </div>
+                  </div>
+        
+                </div>
+                <div class="contact__btn">
+                  <p>Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, вы&nbsp;даете согласие на&nbsp;обработку персональных данных и&nbsp;соглашаетесь c&nbsp;<a target="_blank" href="/">Политикой конфиденциальности</a></p>
+                  <button class="js-form-submit btn-reset btn btn-contact">Отправить</button>
+                </div>
+              </form>
+              <div class="col-2"></div>
+              <ul class="col-4 contact__info info-contact">
+                <li class="info-contact__item">
+                  <span>Телефон</span>
+                  <a class="info-contact__link" href="tel:+79612362424">+7 (961) 236-24-24</a>
+                </li>
+                <li class="info-contact__item">
+                  <span>Email</span>
+                  <a class="info-contact__link" href="mailto:marishe4kin28@mail.ru">marishe4kin28@mail.ru</a>
+                </li>
+                <li class="info-contact__item">
+                  <span>Магазины</span>
+                  <div class="info-contact__box">
+                    <a class="info-contact__link" href="">
+                      <img src="/aichai/assets/img/wb.png" alt="">
+                    </a>
+                    <a class="info-contact__link" href="">
+                      <img src="/aichai/assets/img/ozon.png" alt="">
+                    </a>
+                  </div>
+                </li>
+                <li class="info-contact__item">
+                  <span>Cоц.сети</span>
+                  <div class="info-contact__box">
+                    <a class="info-contact__link" href="">
+                      <img src="data:image/png;base64,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" alt="">
+                    </a>
+                    <a class="info-contact__link" href="">
+                      <img src="/aichai/assets/img/wts.png" alt="">
+                    </a>
+                  </div>
+                </li>
+        
+              </ul>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer section light" id="footer" data-section="footer">
+        <div class="footer__container">
+          <div class="footer__bot bot-footer">
+            <div class="bot-footer__info">
+              <span>© 2024</span>
+              <a target="_blank" href="">Политика конфиденциальности</a>
+            </div>
+            <div class="bot-footer__free">
+              <a target="_blank" href="https://ru.freepik.com/">На&nbsp;сайте использованы изображения с&nbsp;Freepik</a>
+            </div>
+          </div>
+          <span class="country">Сайт от <a href="https://countryagency.ru/" target="_blank">Сountry</a></span>
+        </div>
+      </footer>
+      <div class="modal-chai">
+        <div class="modal-chai__body">
+          <div class="modal-chai__content">
+            <div class="modal-chai__close js-modal-close">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.3033 0.282227L27.7172 1.69623L1.69525 27.7162L0.28125 26.3032L26.3033 0.282227Z" fill="white" />
+                <path d="M1.69525 0.282227L27.7172 26.3022L26.3033 27.7172L0.28125 1.69723L1.69525 0.282227Z" fill="white" />
+              </svg>
+            </div>
+            <div class="modal-chai__wrapper row col-12">
+              <h3 class="modal-chai__title">Нейрочай Astrology &laquo;Стрелец&raquo;</h3>
+      
+              <div class="col-12 modal-chai-container">
+                <div class="col-6 modal-chai__information">
+                  <div class="modal-chai__description">
+                    <ul class="modal-chai__list">
+                    </ul>
+                    <p class="modal-chai__text">Случайная смесь, аромат которой держится чуть дольше, чем твое новое увлечение.</p>
+      
+                  </div>
+                  <ul class="modal-chai__markets">
+                    <li>
+                      <a href="">
+                        <img src="/aichai/assets/img/wb.png" alt="">
+                      </a>
+                    </li>
+                    <li>
+                      <a href="">
+                        <img src="/aichai/assets/img/ozon.png" alt="">
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-6 modal-chai__gallery gallery">
+                  <div   class="modal-chai__slider swiper">
+                    <div class="swiper-wrapper">
+      
+                    </div>
+                  </div>
+                  <div thumbsSlider=""  class="gallery-thumbs swiper">
+                    <div class="swiper-wrapper">
+      
+                    </div>
+                  </div>
+                </div>
+              </div>
+      
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="succes">
+        <div class="succes__body">
+          <div class="succes__content">
+            <div class="succes__close js-modal-close">
+              <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M26.3033 0.282227L27.7172 1.69623L1.69525 27.7162L0.28125 26.3032L26.3033 0.282227Z" fill="white"></path>
+                <path d="M1.69525 0.282227L27.7172 26.3022L26.3033 27.7172L0.28125 1.69723L1.69525 0.282227Z" fill="white"></path>
+              </svg>
+            </div>
+            <div class="succes__wrapper">
+              <h3 class="succes__heading">вопрос отправлен!</h3>
+              <p class="succes__text">Мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
+    </div>
+    <script src="https://api-maps.yandex.ru/2.1/?apikey=d176ec1a-b884-4f13-8214-24154cf58189&amp;lang=ru_RU"> </script>
+    
+  </body>
+</html>
