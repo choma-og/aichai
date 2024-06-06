@@ -1,0 +1,74 @@
+<section class="contact section light">
+  <div class="contact__container">
+    <h2 class="contact__title section-title">остались вопросы? Напишите нам!</h2>
+    <div class="contact__box row col-12">
+      <form action="/local/ajax/join.php" method="post" class="col-6 contact__form form-contact js-form">
+        <div class="contact__wrapper">
+
+          <div class="contact__input wrapper__name ">
+            <input name="user_name" class="contact__name" type="text" id="contact-name" data-type="text" placeholder=" ">
+            <label class="contact__label" for="">Имя</label>
+            <div class="validate__form-error validate__form-error--name js-error js-error-name">
+              <span>Перепроверьте корректность имени</span>
+            </div>
+          </div>
+
+          <div class="contact__input wrapper__phone ">
+            <input data-mask="phone" name="user_phone" class="contact__tel" data-type="phone" type="text" id="contact-phone" inputmode="text" placeholder=" ">
+            <label class="contact__label" for="">Телефон</label>
+            <div class="validate__form-error validate__form-error--phone js-error js-error-phone ">
+              <span>Заполните телефон, мы позвоним на него</span>
+            </div>
+          </div>
+
+          <div class="contact__input wrapper__text">
+            <textarea name="user_text" class="contact__text" type="text" data-type="novalidate" placeholder=""></textarea>
+            <label class="contact__label" for="">Комментарий</label>
+            <div class="validate__form-error validate__form-error--name js-error js-error-name">
+              <span>Перепроверьте корректность письма</span>
+            </div>
+          </div>
+
+        </div>
+        <div class="contact__btn">
+          <p>Нажимая на&nbsp;кнопку &laquo;Отправить&raquo;, вы&nbsp;даете согласие на&nbsp;обработку персональных данных и&nbsp;соглашаетесь c&nbsp;<a target="_blank" href="/">Политикой конфиденциальности</a></p>
+          <button class="js-form-submit btn-reset btn btn-contact">Отправить</button>
+        </div>
+      </form>
+      <div class="col-2"></div>
+      <ul class="col-4 contact__info info-contact">
+        <li class="info-contact__item">
+          <span>Телефон</span>
+          <a class="info-contact__link" href="tel:+79612362424">+7 (961) 236-24-24</a>
+        </li>
+        <li class="info-contact__item">
+          <span>Email</span>
+          <a class="info-contact__link" href="mailto:marishe4kin28@mail.ru">marishe4kin28@mail.ru</a>
+        </li>
+        <li class="info-contact__item">
+          <span>Магазины</span>
+          <div class="info-contact__box">
+            <a class="info-contact__link" href="">
+              <img src="/public/img/catalog/wb.png" alt="">
+            </a>
+            <a class="info-contact__link" href="">
+              <img src="/public/img/catalog/ozon.png" alt="">
+            </a>
+          </div>
+        </li>
+        <li class="info-contact__item">
+          <span>Cоц.сети</span>
+          <div class="info-contact__box">
+            <a class="info-contact__link" href="">
+              <img src="/public/img/vk.png" alt="">
+            </a>
+            <a class="info-contact__link" href="">
+              <img src="/public/img/wts.png" alt="">
+            </a>
+          </div>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</section>

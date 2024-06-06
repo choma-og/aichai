@@ -1,0 +1,245 @@
+.header {
+  &__container {
+    min-height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    @media (max-width:1130px) {
+      justify-content: flex-end;
+    }
+  }
+  &__menu {
+
+  }
+  &__logo {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%,0%);
+    img {
+      max-width: 90px;
+      @media (max-width:650px) {
+        max-width: 70px;
+      }
+    }
+  }
+  &__markets {
+    @media (max-width:1130px) {
+      display: none !important;
+    }
+  }
+}
+.menu {
+  &__icon {
+    position: relative;
+    width: 44px;
+    height: 44px;
+    cursor: pointer;
+    display: none;
+    z-index: 550;
+    @media (max-width:1130px) {
+      display: flex;
+    }
+  }
+  &-markets {
+    display: none;
+    img {
+      width: 40px;
+      height: 40px;
+    }
+    @media (max-width:1130px) {
+      display: flex;
+      gap: 8px;
+    }
+  }
+  &__body {
+    @media (max-width:1130px) {
+      position: fixed;
+      left: -300%;
+      top: 0;
+      width: 40%;
+      height: 100%;
+      display: flex;
+      overflow: auto;
+      padding: 150px 20px 60px 20px;
+      background-color: var(--color-light);
+      transition: left .3s ease;
+      z-index: 500;
+      flex-direction: column;
+      justify-content: space-between;
+      gap: 60px;
+      @media (max-width:996px) {
+        width: 50%;
+      }
+      @media (max-width:650px) {
+        width: 100%;
+      }
+      &.active {
+        transition: left .3s ease-out;
+        left: 0;
+      }
+    }
+  }
+  &__list {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    @media (max-width:1130px) {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  }
+  &__item {
+    @media (max-width:1130px) {
+      width: 100%;
+    }
+  }
+  &__link {
+    font-size: 20px;
+    color: var(--color-green);
+    position: relative;
+    transition: all .3s ease-out;
+    @media (max-width:1130px) {
+      font-family: "ZTC";
+      font-size: 26px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+    }
+    &::after {
+      transition: all .3s ease-out;
+      position: absolute;
+      left: 0;
+      bottom: -3px;
+      width: 0;
+      content: "";
+      height: 1px;
+      background-color: var(--color-accent);
+    }
+    &:hover {
+      color: var(--color-accent);
+    }
+  }
+}
+.menu__link:hover::after {
+  width: 100%;
+}
+.markets-header {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  &__item {
+
+  }
+  &__link {
+    font-size: 20px;
+    color: var(--color-green);
+  }
+}
+.menu__icon::after, 
+.menu__icon::before {
+  content: "";
+}
+.menu__icon span, 
+.menu__icon::after, 
+.menu__icon::before {
+  position: absolute;
+  background-color: rgba(41, 51, 63, 1);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  height: 2px;
+  width: 22px;
+  transition: all 0.3s ease 0s;
+}
+.menu__icon::before {
+  top: 16px;
+}
+.menu__icon::after {
+  top: 27px;
+  width: 15px;
+  right: 0;
+  left: initial;
+  transform: translate(-75%,0);
+}
+.menu__icon.active::before {
+  top: 21px;
+  left: 12px;
+  transform: rotate(-45deg);
+}
+.menu__icon.active::after {
+  top: 21px;
+  left: 12px;
+  transform: rotate(45deg);
+  width: 22px;
+  right: initial;
+}
+.menu__icon.active span {
+  transform: scale(0);
+}
+.menu__item-nav {
+  display: none;
+  padding: 10px;
+  cursor: pointer;
+  @media (max-width:1130px) {
+    display: flex;
+  }
+}
+.menu__item-box {
+  display: flex;
+  align-items: center;
+}
+.menu__sublist {
+  display: none;
+  flex-direction: column;
+  gap: 8px;
+  &.active {
+    display: flex;
+    padding-top: 20px;
+    padding-left: 20px;
+  }
+  @media (max-width:1130px) {
+    // display: flex;
+  }
+}
+.menu__sublink {
+  color: var(--color-green);
+  font-family: "ZTC";
+  font-weight: 500;
+  font-size: 20px;
+  width: 100%;
+  display: flex;
+}
+.menu__item .menu__item-nav svg{
+  transform: rotate(90deg);
+  transition: all .2s ease;
+}
+.menu__item.acrd-open .menu__item-nav svg{
+  transform: rotate(270deg);
+}
+.menu__icon.active::before {
+  @media (max-width:650px) {
+    background-color: var(--color-accent);
+  }
+}
+.menu__icon.active::after {
+  @media (max-width:650px) {
+    background-color: var(--color-accent);
+  }
+}
+.menu__icon.active span {
+  @media (max-width:650px) {
+    background-color: var(--color-accent);
+  }
+}
+.menu__item-nav svg {
+  @media (max-width:650px) {
+    width: 30px;
+    height: 24px;
+  }
+}
+.menu__body.active .menu__link::after{
+  display:none;
+  width: 0%;
+  left: -100000%;
+}

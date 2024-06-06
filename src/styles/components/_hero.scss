@@ -1,0 +1,151 @@
+.hero {
+  position: relative;
+  &__container {
+    padding-top: 100px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 70px;
+    @media (max-width:650px) {
+      padding-bottom: 40px;
+    }
+  }
+  &__title {
+    font-family: "ZTC";
+    font-size: 120px;
+    color: var(--color-accent);
+    text-transform: uppercase;
+    line-height: 140%;
+    @media (max-width:1130px) {
+      font-size: 72px;
+    }
+    @media (max-width:800px) {
+      font-size: 60px;
+    }
+    @media (max-width:650px) {
+      font-size: 44px;
+    }
+  }
+  &__descr {
+    font-family: "ZTC";
+    font-size: 32px;
+    text-align: center;
+    max-width: 860px;
+    line-height: 120%;
+    margin-bottom: 100px;
+    @media (max-width:1130px) {
+      max-width: 400px;
+      font-size: 24px;
+    }
+    @media (max-width:800px) {
+      font-size: 18px;
+      margin-bottom: 60px;
+    }
+  }
+  &__list {
+    @media (max-width:800px) {
+      flex-direction: column;
+    }
+  }
+  &__item {
+
+  }
+}
+.hero-advantages {
+  display: flex;
+  justify-content: space-between;
+  gap: 120px;
+  @media (max-width:1300px) {
+    gap: 60px;
+  }
+  @media (max-width:650px) {
+    gap: 30px;
+  }
+  // @media (max-width:996px) {
+  //   gap: 20px;
+  // }
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  &__img {
+    width: 142px;
+    height: 142px;
+    border-radius: 50%;
+    overflow: hidden;
+    position: relative;
+    margin-bottom: 20px;
+    @media (max-width:996px) {
+      width: 100px;
+      height: 100px;
+    }
+    img {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center;
+      top: 0;
+      left: 0;
+    }
+  }
+  &__descr {
+    max-width: 280px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 300;
+    line-height: 140%;
+    @media (max-width:1130px) {
+      max-width: 250px;
+      font-size: 18px;
+    }
+    @media (max-width:996px) {
+      font-size: 16px;
+    }
+    @media (max-width:650px) {
+      font-size: 14px;
+    }
+  }
+}
+.hero-decor {
+  position: absolute;
+  z-index: 2;
+  overflow: hidden;
+
+}
+.hero-decor-1 {
+  top: 0;
+  left: 0;
+  width: 380px;
+  @media (max-width:1300px) {
+    width: 280px;
+  }
+  @media (max-width:1130px) {
+    width: 210px;
+  
+  }
+  @media (max-width:650px) {
+    width: 140px;
+
+  }
+}
+.hero-decor-2 {
+  top: 0;
+  right: 0;
+  width: 360px;
+  @media (max-width:1300px) {
+    width: 280px;
+  }
+  @media (max-width:1130px) {
+    width: 210px;
+  }
+  @media (max-width:800px) {
+    top: 220px;
+    width: 190px;
+  }
+  @media (max-width:650px) {
+    width: 110px;
+
+  }
+}
